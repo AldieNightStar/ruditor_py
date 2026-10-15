@@ -1,0 +1,20 @@
+[project]
+name = "ruditor_py"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "HaxiDenti", email = "aldie.nightstar@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-openai>=1.7.2",
+    "langchain[mcp]>=1.4.6",
+]
+
+[project.scripts]
+program = "ruditor_py:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
